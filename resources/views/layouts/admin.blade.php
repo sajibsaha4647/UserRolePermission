@@ -3,7 +3,7 @@
 <head>
 	<!-- Basic Page Info -->
 	<meta charset="utf-8">
-	<title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
+	<title>User Role permission</title>
 
 	<!-- Site favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png">
@@ -268,16 +268,26 @@
 							<span class="micon dw dw-house-1"></span><span class="mtext">Home</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="index.html">Dashboard style 1</a></li>
+							<li><a href="{{ url('/admina') }}">Dashboard style 1</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">About Team</span>
+							<span class="micon dw dw-list3"></span><span class="mtext">Admin Management</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="index.html">Add Team</a></li>
-							<li><a href="index.html">All Team</a></li>
+							<li><a href="javascript:;">Add User</a></li>
+							<li><a href="javascript:;">all User</a></li>
+							<li class="dropdown">
+								<a href="javascript:;" class="dropdown-toggle">
+									<span class="micon fa fa-plug"></span><span class="mtext">User Role</span>
+								</a>
+								<ul class="submenu child">
+									<li><a href="javascript:;">Add UserRole</a></li>
+									<li><a href="javascript:;">All UserRole</a></li>
+									<li><a href="javascript:;">Assign Role & Permission</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li class="dropdown">
@@ -298,144 +308,6 @@
 							</li>
 						</ul>
 					</li>
-                    <li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Slider Management</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">Add slider</a></li>
-							<li><a href="index.html">All slider</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Order list</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">All Orderlist</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Contact</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">All Contact</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Coupon Card</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">Add Coupon</a></li>
-							<li><a href="index.html">All Coupon</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">News letter</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">All NewsLetter</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Daily On sell</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">All Daily sell</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Review</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">all Review list</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Login & Registration</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">All customer list</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">New Arrival</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">Add New Arrival</a></li>
-							<li><a href="index.html">All New Arrival</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Payment Method</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">Add payment method</a></li>
-							<li><a href="index.html">All payment method</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Product Management</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">add Product</a></li>
-							<li><a href="index.html">all product</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Popular Product</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">Add popular Product</a></li>
-							<li><a href="index.html">All popular Product</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Product Brand</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">Add Brand</a></li>
-							<li><a href="index.html">all Brand</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Product Category</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">Add Category</a></li>
-							<li><a href="index.html">All Category</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Invoice & Sells Report</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">All order Invoice</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="micon dw dw-house-1"></span><span class="mtext">Settings</span>
-						</a>
-						<ul class="submenu">
-							<li><a href="index.html">Add Settings</a></li>
-							<li><a href="index.html">All Settings</a></li>
-						</ul>
-					</li>
-
 					<li>
 						<div class="dropdown-divider"></div>
 					</li>
@@ -444,7 +316,7 @@
 							<span class="micon dw dw-house-1"></span><span class="mtext">Logout</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="index.html">Logout</a></li>
+							<li><a href="{{ url('/admina') }}">Logout</a></li>
 						</ul>
 					</li>
 

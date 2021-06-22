@@ -22,6 +22,8 @@ class UserSeeder extends Seeder
     {
         $faker = Faker::create();
 
+
+
         foreach(range(1,10) as $value){
             // DB::table('users')->insert([ //random number seed
             //     'name' => Str::random(10) ,
