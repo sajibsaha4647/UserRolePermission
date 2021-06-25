@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\RoleHasPermission;
+use App\Models\AdminUserRole;
 use Illuminate\Http\Request;
 
-class RoleHasPermissionController extends Controller
+class AdminUserRoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class RoleHasPermissionController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.adminUser.Role.addRole');
     }
 
     /**
@@ -41,10 +41,10 @@ class RoleHasPermissionController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\RoleHasPermission  $roleHasPermission
+     * @param  \App\Models\AdminUserRole  $adminUserRole
      * @return \Illuminate\Http\Response
      */
-    public function show(RoleHasPermission $roleHasPermission)
+    public function show(AdminUserRole $adminUserRole)
     {
         //
     }
@@ -52,10 +52,10 @@ class RoleHasPermissionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\RoleHasPermission  $roleHasPermission
+     * @param  \App\Models\AdminUserRole  $adminUserRole
      * @return \Illuminate\Http\Response
      */
-    public function edit(RoleHasPermission $roleHasPermission)
+    public function edit(AdminUserRole $adminUserRole)
     {
         //
     }
@@ -64,10 +64,10 @@ class RoleHasPermissionController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\RoleHasPermission  $roleHasPermission
+     * @param  \App\Models\AdminUserRole  $adminUserRole
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, RoleHasPermission $roleHasPermission)
+    public function update(Request $request, AdminUserRole $adminUserRole)
     {
         //
     }
@@ -75,10 +75,10 @@ class RoleHasPermissionController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\RoleHasPermission  $roleHasPermission
+     * @param  \App\Models\AdminUserRole  $adminUserRole
      * @return \Illuminate\Http\Response
      */
-    public function destroy(RoleHasPermission $roleHasPermission)
+    public function destroy(AdminUserRole $adminUserRole)
     {
         //
     }

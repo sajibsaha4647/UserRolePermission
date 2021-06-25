@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CustomerUserRole;
+use App\Models\LocalUser;
 use Illuminate\Http\Request;
 
-class CustomerUserRoleController extends Controller
+class LocalUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class CustomerUserRoleController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CustomerUserRole  $customerUserRole
+     * @param  \App\Models\LocalUser  $localUser
      * @return \Illuminate\Http\Response
      */
-    public function show(CustomerUserRole $customerUserRole)
+    public function show(LocalUser $localUser)
     {
         //
     }
@@ -52,10 +52,10 @@ class CustomerUserRoleController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\CustomerUserRole  $customerUserRole
+     * @param  \App\Models\LocalUser  $localUser
      * @return \Illuminate\Http\Response
      */
-    public function edit(CustomerUserRole $customerUserRole)
+    public function edit(LocalUser $localUser)
     {
         //
     }
@@ -64,10 +64,10 @@ class CustomerUserRoleController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\CustomerUserRole  $customerUserRole
+     * @param  \App\Models\LocalUser  $localUser
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CustomerUserRole $customerUserRole)
+    public function update(Request $request, LocalUser $localUser)
     {
         //
     }
@@ -75,10 +75,10 @@ class CustomerUserRoleController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\CustomerUserRole  $customerUserRole
+     * @param  \App\Models\LocalUser  $localUser
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CustomerUserRole $customerUserRole)
+    public function destroy(LocalUser $localUser)
     {
         //
     }

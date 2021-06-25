@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AdminUser;
+use App\Models\LocalUserPermission;
 use Illuminate\Http\Request;
 
-class AdminUserController extends Controller
+class LocalUserPermissionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class AdminUserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\AdminUser  $adminUser
+     * @param  \App\Models\LocalUserPermission  $localUserPermission
      * @return \Illuminate\Http\Response
      */
-    public function show(AdminUser $adminUser)
+    public function show(LocalUserPermission $localUserPermission)
     {
         //
     }
@@ -52,10 +52,10 @@ class AdminUserController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\AdminUser  $adminUser
+     * @param  \App\Models\LocalUserPermission  $localUserPermission
      * @return \Illuminate\Http\Response
      */
-    public function edit(AdminUser $adminUser)
+    public function edit(LocalUserPermission $localUserPermission)
     {
         //
     }
@@ -64,10 +64,10 @@ class AdminUserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\AdminUser  $adminUser
+     * @param  \App\Models\LocalUserPermission  $localUserPermission
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, AdminUser $adminUser)
+    public function update(Request $request, LocalUserPermission $localUserPermission)
     {
         //
     }
@@ -75,10 +75,10 @@ class AdminUserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\AdminUser  $adminUser
+     * @param  \App\Models\LocalUserPermission  $localUserPermission
      * @return \Illuminate\Http\Response
      */
-    public function destroy(AdminUser $adminUser)
+    public function destroy(LocalUserPermission $localUserPermission)
     {
         //
     }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCustomerUserRolesTable extends Migration
+class CreateLocalUserRolesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateCustomerUserRolesTable extends Migration
      */
     public function up()
     {
-        Schema::create('customer_user_roles', function (Blueprint $table) {
-            $table->increments('customer_user_role_id');
-            $table->string('customer_user_id');
-            $table->string('customer_user_rolename');
-            $table->integer('customer_role_status')->default(1);
+        Schema::create('local_user_roles', function (Blueprint $table) {
+            $table->id();
             $table->timestamps();
         });
     }
@@ -29,6 +26,6 @@ class CreateCustomerUserRolesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('customer_user_roles');
+        Schema::dropIfExists('local_user_roles');
     }
 }

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class GroupName extends Model
+class LocalUserPermission extends Model
 {
     use HasFactory;
 }

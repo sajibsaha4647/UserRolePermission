@@ -276,16 +276,16 @@
 							<span class="micon dw dw-list3"></span><span class="mtext">Admin Management</span>
 						</a>
 						<ul class="submenu">
-							<li><a href="javascript:;">Add User</a></li>
+							<li><a href="{{ url('/admina/addUser') }}">Add User</a></li>
 							<li><a href="javascript:;">all User</a></li>
 							<li class="dropdown">
 								<a href="javascript:;" class="dropdown-toggle">
 									<span class="micon fa fa-plug"></span><span class="mtext">User Role</span>
 								</a>
 								<ul class="submenu child">
-									<li><a href="javascript:;">Add UserRole</a></li>
+									<li><a href="{{ url('/admina/addRoleUser') }}">Add UserRole</a></li>
 									<li><a href="javascript:;">All UserRole</a></li>
-									<li><a href="javascript:;">Assign Role & Permission</a></li>
+									<li><a href="{{ url('/admina/addPermissionUser') }}">Assign Role & Permission</a></li>
 								</ul>
 							</li>
 						</ul>

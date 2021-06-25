@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\GroupName;
+use App\Models\LocalUserRole;
 use Illuminate\Http\Request;
 
-class GroupNameController extends Controller
+class LocalUserRoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class GroupNameController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\GroupName  $groupName
+     * @param  \App\Models\LocalUserRole  $localUserRole
      * @return \Illuminate\Http\Response
      */
-    public function show(GroupName $groupName)
+    public function show(LocalUserRole $localUserRole)
     {
         //
     }
@@ -52,10 +52,10 @@ class GroupNameController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\GroupName  $groupName
+     * @param  \App\Models\LocalUserRole  $localUserRole
      * @return \Illuminate\Http\Response
      */
-    public function edit(GroupName $groupName)
+    public function edit(LocalUserRole $localUserRole)
     {
         //
     }
@@ -64,10 +64,10 @@ class GroupNameController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\GroupName  $groupName
+     * @param  \App\Models\LocalUserRole  $localUserRole
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, GroupName $groupName)
+    public function update(Request $request, LocalUserRole $localUserRole)
     {
         //
     }
@@ -75,10 +75,10 @@ class GroupNameController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\GroupName  $groupName
+     * @param  \App\Models\LocalUserRole  $localUserRole
      * @return \Illuminate\Http\Response
      */
-    public function destroy(GroupName $groupName)
+    public function destroy(LocalUserRole $localUserRole)
     {
         //
     }
