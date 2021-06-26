@@ -250,8 +250,6 @@
 		<div class="brand-logo">
 			<a href="{{ '/admins' }}">
                 <div class="weight-600 font-30 text-blue">Dream Shop</div>
-				{{-- <img src="{{ asset('admin') }}/vendors/images/deskapp-logo.svg" alt="" class="dark-logo">
-				<img src="{{ asset('admin') }}/vendors/images/deskapp-logo-white.svg" alt="" class="light-logo"> --}}
 			</a>
 			<div class="close-sidebar" data-toggle="left-sidebar-close">
 				<i class="ion-close-round"></i>
@@ -330,6 +328,8 @@
 
             @yield('content')
 
+
+
 			<div class="footer-wrap pd-20 mb-20 card-box">
 				Web app <a href="#" target="_blank">Sajib saha</a>
 			</div>
@@ -346,5 +346,6 @@
 	<script src="{{ asset('admin') }}/src/plugins/datatables/js/dataTables.responsive.min.js"></script>
 	<script src="{{ asset('admin') }}/src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
 	<script src="{{ asset('admin') }}/vendors/scripts/dashboard.js"></script>
+
 </body>
 </html>
