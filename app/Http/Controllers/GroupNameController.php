@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\LocalUser;
+use App\Models\GroupName;
 use Illuminate\Http\Request;
 
-class LocalUserController extends Controller
+class GroupNameController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class LocalUserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\LocalUser  $localUser
+     * @param  \App\Models\GroupName  $groupName
      * @return \Illuminate\Http\Response
      */
-    public function show(LocalUser $localUser)
+    public function show(GroupName $groupName)
     {
         //
     }
@@ -52,10 +52,10 @@ class LocalUserController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\LocalUser  $localUser
+     * @param  \App\Models\GroupName  $groupName
      * @return \Illuminate\Http\Response
      */
-    public function edit(LocalUser $localUser)
+    public function edit(GroupName $groupName)
     {
         //
     }
@@ -64,10 +64,10 @@ class LocalUserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\LocalUser  $localUser
+     * @param  \App\Models\GroupName  $groupName
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, LocalUser $localUser)
+    public function update(Request $request, GroupName $groupName)
     {
         //
     }
@@ -75,10 +75,10 @@ class LocalUserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\LocalUser  $localUser
+     * @param  \App\Models\GroupName  $groupName
      * @return \Illuminate\Http\Response
      */
-    public function destroy(LocalUser $localUser)
+    public function destroy(GroupName $groupName)
     {
         //
     }

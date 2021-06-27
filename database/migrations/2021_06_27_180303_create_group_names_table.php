@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLocalUsersTable extends Migration
+class CreateGroupNamesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class CreateLocalUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('local_users', function (Blueprint $table) {
-            $table->id();
+        Schema::create('group_names', function (Blueprint $table) {
+            $table->increments('group_id');
+            $table->integer('group_name');
+            $table->string('group_status');
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateLocalUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('local_users');
+        Schema::dropIfExists('group_names');
     }
 }

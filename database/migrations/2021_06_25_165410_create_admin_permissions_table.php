@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateAdminPermissionsTable extends Migration
 {
-    /**
+    /**u
      * Run the migrations.
      *
      * @return void
@@ -14,7 +14,10 @@ class CreateAdminPermissionsTable extends Migration
     public function up()
     {
         Schema::create('admin_permissions', function (Blueprint $table) {
-            $table->id();
+            $table->increments('admin_permission_id');
+            $table->string('group_id');
+            $table->string('admin_permission_name');
+            $table->integer('admin_permission_status')->default(1);
             $table->timestamps();
         });
     }

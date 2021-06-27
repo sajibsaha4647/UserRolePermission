@@ -14,7 +14,9 @@ class CreateAdminUserRolesTable extends Migration
     public function up()
     {
         Schema::create('admin_user_roles', function (Blueprint $table) {
-            $table->id();
+            $table->increments('admin_role_id');
+            $table->string('admin_role_name');
+            $table->string('admin_role_status');
             $table->timestamps();
         });
     }
