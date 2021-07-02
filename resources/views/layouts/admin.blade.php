@@ -18,6 +18,8 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/vendors/styles/core.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/vendors/styles/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/src/plugins/datatables/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/src/plugins/datatables/css/responsive.bootstrap4.min.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/src/plugins/datatables/css/dataTables.bootstrap4.min.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/src/plugins/datatables/css/responsive.bootstrap4.min.css">
 	<link rel="stylesheet" type="text/css" href="{{ asset('admin') }}/vendors/styles/style.css">
@@ -282,7 +284,7 @@
 								</a>
 								<ul class="submenu child">
 									<li><a href="{{ url('/admina/addRoleUser') }}">Add UserRole</a></li>
-									<li><a href="{{ url('/admina/addPermissionUser') }}">All UserRole</a></li>
+									<li><a href="{{ url('/admina/allRoleUser') }}">All UserRole</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
@@ -290,9 +292,8 @@
 									<span class="micon fa fa-plug"></span><span class="mtext">Group Permission</span>
 								</a>
 								<ul class="submenu child">
-									<li><a href="{{ url('/admina/addRoleUser') }}">Add GroupName</a></li>
-									<li><a href="javascript:;">All UserRole</a></li>
-									<li><a href="{{ url('/admina/addPermissionUser') }}">All GroupName</a></li>
+									<li><a href="{{ url('/admina/addGroupName') }}">Add GroupName</a></li>
+									<li><a href="{{ url('/admina/allGroupName') }}">All GroupName</a></li>
 								</ul>
 							</li>
 							<li class="dropdown">
@@ -300,14 +301,14 @@
 									<span class="micon fa fa-plug"></span><span class="mtext">Admin Permission</span>
 								</a>
 								<ul class="submenu child">
-									<li><a href="{{ url('/admina/addRoleUser') }}">Add Permission</a></li>
+									<li><a href="{{ url('/admina/addPermissionUser') }}">Add Permission</a></li>
 									<li><a href="javascript:;">All UserRole</a></li>
-									<li><a href="{{ url('/admina/addPermissionUser') }}">Assign Permission</a></li>
+									<li><a href="{{ url('/admina/allPermissionUser') }}">Assign Permission</a></li>
 								</ul>
 							</li>
 						</ul>
 					</li>
-					<li class="dropdown">
+					{{-- <li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle">
 							<span class="micon dw dw-list3"></span><span class="mtext">User Management</span>
 						</a>
@@ -324,18 +325,18 @@
 								</ul>
 							</li>
 						</ul>
-					</li>
-					<li>
+					</li> --}}
+					{{-- <li>
 						<div class="dropdown-divider"></div>
-					</li>
-					<li class="dropdown">
+					</li> --}}
+					{{-- <li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle">
 							<span class="micon dw dw-house-1"></span><span class="mtext">Logout</span>
 						</a>
 						<ul class="submenu">
 							<li><a href="{{ url('/admina') }}">Logout</a></li>
 						</ul>
-					</li>
+					</li> --}}
 
 				</ul>
 			</div>
@@ -360,11 +361,23 @@
 	<script src="{{ asset('admin') }}/vendors/scripts/process.js"></script>
 	<script src="{{ asset('admin') }}/vendors/scripts/layout-settings.js"></script>
 	<script src="{{ asset('admin') }}/src/plugins/apexcharts/apexcharts.min.js"></script>
+
 	<script src="{{ asset('admin') }}/src/plugins/datatables/js/jquery.dataTables.min.js"></script>
 	<script src="{{ asset('admin') }}/src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
 	<script src="{{ asset('admin') }}/src/plugins/datatables/js/dataTables.responsive.min.js"></script>
 	<script src="{{ asset('admin') }}/src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
 	<script src="{{ asset('admin') }}/vendors/scripts/dashboard.js"></script>
+
+	<!-- buttons for Export datatable -->
+	<script src="{{ asset('admin') }}/src/plugins/datatables/js/dataTables.buttons.min.js"></script>
+	<script src="{{ asset('admin') }}/src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
+	<script src="{{ asset('admin') }}/src/plugins/datatables/js/buttons.print.min.js"></script>
+	<script src="{{ asset('admin') }}/src/plugins/datatables/js/buttons.html5.min.js"></script>
+	<script src="{{ asset('admin') }}/src/plugins/datatables/js/buttons.flash.min.js"></script>
+	<script src="{{ asset('admin') }}/src/plugins/datatables/js/pdfmake.min.js"></script>
+	<script src="{{ asset('admin') }}/src/plugins/datatables/js/vfs_fonts.js"></script>
+	<!-- Datatable Setting js -->
+	<script src="{{ asset('admin') }}/vendors/scripts/datatable-setting.js"></script></body>
 
 </body>
 </html>

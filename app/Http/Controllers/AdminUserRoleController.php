@@ -35,7 +35,7 @@ class AdminUserRoleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('admin.adminUser.Role.AllRole');
     }
 
     /**
