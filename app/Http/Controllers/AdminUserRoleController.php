@@ -22,9 +22,24 @@ class AdminUserRoleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $request->validate([
+            "admin_role_name"=>"required",
+        ],[
+            "admin_role_name.required"=>"Rolename name is Required !"
+        ]);
+
+        $AdminUserRole = new AdminUserRole();
+        $AdminUserRole->admin_role_name = $request->admin_role_name ;
+
+        $AdminUserRole->save();
+
+        if($AdminUserRole){
+            return redirect()->back()->with('success','Insert Successful !');
+        }else{
+            return redirect()->back()->with('danger','Unable To insert !');
+        }
     }
 
     /**

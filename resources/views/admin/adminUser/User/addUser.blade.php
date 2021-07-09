@@ -20,7 +20,7 @@
 						<div class="form-group row">
 							<label class="col-sm-12 col-md-2 col-form-label">Email</label>
 							<div class="col-sm-12 col-md-10">
-								<input class="form-control" value="bootstrap@example.com" type="email">
+								<input class="form-control" value="" type="email">
 							</div>
 						</div>
 						<div class="form-group row">

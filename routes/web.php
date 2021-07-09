@@ -22,6 +22,14 @@ Auth::routes();
 //admin
 Route::get('/admina', [App\Http\Controllers\AdminController::class, 'index'])->name('home');
 
+//admin Role User Route
+Route::get('/admina/addRoleUser', [App\Http\Controllers\AdminUserRoleController::class, 'index'])->name('home');
+Route::get('/admina/allRoleUser', [App\Http\Controllers\AdminUserRoleController::class, 'store'])->name('home');
+Route::post('/admina/CreateRoleUser', [App\Http\Controllers\AdminUserRoleController::class, 'create'])->name('home');
+Route::get('/admina/editRoleUser', [App\Http\Controllers\AdminUserRoleController::class, 'edit'])->name('home');
+Route::get('/admina/UpdateRoleUser', [App\Http\Controllers\AdminUserRoleController::class, 'update'])->name('home');
+Route::get('/admina/DeleteRoleUser', [App\Http\Controllers\AdminUserRoleController::class, 'destroy'])->name('home');
+
 //admin User Route
 Route::get('/admina/addUser', [App\Http\Controllers\UserController::class, 'index'])->name('home');
 Route::get('/admina/allUser', [App\Http\Controllers\UserController::class, 'store'])->name('home');
@@ -29,6 +37,8 @@ Route::post('/admina/CreateUser', [App\Http\Controllers\UserController::class, '
 Route::get('/admina/editUser', [App\Http\Controllers\UserController::class, 'edit'])->name('home');
 Route::get('/admina/UpdateUser', [App\Http\Controllers\UserController::class, 'update'])->name('home');
 Route::get('/admina/DeleteUser', [App\Http\Controllers\UserController::class, 'destroy'])->name('home');
+
+
 
 //admin Group Name Route
 Route::get('/admina/addGroupName', [App\Http\Controllers\GroupNameController::class, 'index'])->name('home');
@@ -38,13 +48,7 @@ Route::get('/admina/editGroupName', [App\Http\Controllers\GroupNameController::c
 Route::get('/admina/UpdateGroupName', [App\Http\Controllers\GroupNameController::class, 'update'])->name('home');
 Route::get('/admina/DeleteGroupName', [App\Http\Controllers\GroupNameController::class, 'destroy'])->name('home');
 
-//admin Role User Route
-Route::get('/admina/addRoleUser', [App\Http\Controllers\AdminUserRoleController::class, 'index'])->name('home');
-Route::get('/admina/allRoleUser', [App\Http\Controllers\AdminUserRoleController::class, 'store'])->name('home');
-Route::post('/admina/CreateRoleUser', [App\Http\Controllers\AdminUserRoleController::class, 'create'])->name('home');
-Route::get('/admina/editRoleUser', [App\Http\Controllers\AdminUserRoleController::class, 'edit'])->name('home');
-Route::get('/admina/UpdateRoleUser', [App\Http\Controllers\AdminUserRoleController::class, 'update'])->name('home');
-Route::get('/admina/DeleteRoleUser', [App\Http\Controllers\AdminUserRoleController::class, 'destroy'])->name('home');
+
 
 //admin Permission User Route
 Route::get('/admina/addPermissionUser', [App\Http\Controllers\AdminPermissionController::class, 'index'])->name('home');
