@@ -11,110 +11,30 @@
             <thead>
                 <tr>
                     <th class="table-plus datatable-nosort">Name</th>
-                    <th>Age</th>
-                    <th>Office</th>
-                    <th>Address</th>
-                    <th>Start Date</th>
-                    <th>Salart</th>
+                    <th>status</th>
+                    <th>actions</th>
                 </tr>
             </thead>
             <tbody>
+                @foreach($allRoles as $key => $value)
                 <tr>
-                    <td class="table-plus">Gloria F. Mead</td>
-                    <td>25</td>
-                    <td>Sagittarius</td>
-                    <td>2829 Trainer Avenue Peoria, IL 61602 </td>
-                    <td>29-03-2018</td>
-                    <td>$162,700</td>
+                    <td class="table-plus">{{ $value->admin_role_name }}</td>
+                    <td>{{ $value->admin_role_status == 1 ? 'enable':'disable'  }}</td>
+                    <td>
+                        <a href=""  class="">
+                            <i style="font-size:20px" class="fa fa-pencil"></i>
+                        </a>
+                        <a href=""  class="">
+                            <i style="font-size:20px" class="fa fa-eye"></i>
+                        </a>
+                        <a href=""  class="">
+                            <i style="font-size:20px" class="fa fa-trash"></i>
+                        </a>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
-                <tr>
-                    <td class="table-plus">Andrea J. Cagle</td>
-                    <td>30</td>
-                    <td>Gemini</td>
-                    <td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-                    <td>29-03-2018</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td class="table-plus">Andrea J. Cagle</td>
-                    <td>20</td>
-                    <td>Gemini</td>
-                    <td>2829 Trainer Avenue Peoria, IL 61602 </td>
-                    <td>29-03-2018</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td class="table-plus">Andrea J. Cagle</td>
-                    <td>30</td>
-                    <td>Sagittarius</td>
-                    <td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-                    <td>29-03-2018</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td class="table-plus">Andrea J. Cagle</td>
-                    <td>25</td>
-                    <td>Gemini</td>
-                    <td>2829 Trainer Avenue Peoria, IL 61602 </td>
-                    <td>29-03-2018</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td class="table-plus">Andrea J. Cagle</td>
-                    <td>20</td>
-                    <td>Sagittarius</td>
-                    <td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-                    <td>29-03-2018</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td class="table-plus">Andrea J. Cagle</td>
-                    <td>18</td>
-                    <td>Gemini</td>
-                    <td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-                    <td>29-03-2018</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td class="table-plus">Andrea J. Cagle</td>
-                    <td>30</td>
-                    <td>Sagittarius</td>
-                    <td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-                    <td>29-03-2018</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td class="table-plus">Andrea J. Cagle</td>
-                    <td>30</td>
-                    <td>Sagittarius</td>
-                    <td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-                    <td>29-03-2018</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td class="table-plus">Andrea J. Cagle</td>
-                    <td>30</td>
-                    <td>Gemini</td>
-                    <td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-                    <td>29-03-2018</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td class="table-plus">Andrea J. Cagle</td>
-                    <td>30</td>
-                    <td>Gemini</td>
-                    <td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-                    <td>29-03-2018</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td class="table-plus">Andrea J. Cagle</td>
-                    <td>30</td>
-                    <td>Gemini</td>
-                    <td>1280 Prospect Valley Road Long Beach, CA 90802 </td>
-                    <td>29-03-2018</td>
-                    <td>$162,700</td>
-                </tr>
+                @endforeach
             </tbody>
         </table>
     </div>

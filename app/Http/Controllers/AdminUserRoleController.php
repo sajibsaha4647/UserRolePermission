@@ -50,7 +50,8 @@ class AdminUserRoleController extends Controller
      */
     public function store(Request $request)
     {
-        return view('admin.adminUser.Role.AllRole');
+        $allRoles = AdminUserRole::where('admin_role_status','1')->orderBy('admin_role_id', 'DESC')->get();
+        return view('admin.adminUser.Role.AllRole',compact('allRoles'));
     }
 
     /**
